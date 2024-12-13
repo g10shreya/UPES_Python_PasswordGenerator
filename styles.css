@@ -1,0 +1,124 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    color: #267C8F;
+}
+
+h1 {
+    color: #30C3CD;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.options label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #30C3CD;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #267C8F;
+}
+
+#result {
+    margin-top: 30px;
+}
+
+#generated-password {
+    font-weight: bold;
+    color: #267C8F;
+    word-break: break-all;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Styling for the "Copy to Clipboard" button */
+#result button {
+    background-color: #267C8F;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+#result button:hover {
+    background-color: #30C3CD;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    input[type="number"] {
+        padding: 10px;
+    }
+}
